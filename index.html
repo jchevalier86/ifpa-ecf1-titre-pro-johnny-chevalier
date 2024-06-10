@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- La balise meta charset spécifie le jeu de caractères utilisé. Utiliser UTF-8 est recommandé pour une compatibilité maximale -->
+    <meta charset="UTF-8">
+    
+    <!-- La balise meta viewport contrôle la mise en page sur les appareils mobiles et est essentielle pour un design responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Liens vers les feuilles de style CSS -->
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/style.css">
+
+    <!-- Favicon pour le site -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Police pour le site -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Titre de la page (max 60 caractères) -->
+    <title>John Doe - Développeur Web</title>
+
+    <!-- Meta description de la page (max 160 caractères) -->
+    <meta name="description" content="">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo-john-doe.svg">
+        </div>
+        <div class="nav-cercle">
+            <div class="icon green"></div>
+            <div class="icon blue"></div>
+        </div>
+    </header>
+    
+    <section class="titre-principal">
+        <h1>
+            John Doe - Développeur Web
+        </h1>
+        <hr class="separator">
+    </section>
+    
+    <section class="profil">
+        <h2>Mon Profil</h2>
+        <div class="profil-content">
+            <img src="/images/portrait.jpg" alt="John Doe">
+            <p>
+                Développeur web de père en fils, passionné par la technologie et l'innovation. J'ai acquis une expertise en HTML, CSS, JavaScript et Git, me permettant de créer des sites web performants et esthétiques. Prêt à relever de nouveaux défis.
+            </p>
+        </div>
+    </section>
+    
+    <section class="competences">
+        <h2>
+            Mes compétences
+        </h2>
+        <div class="competences-content">
+            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"> <img src="/images/html.svg" alt="Logo HTML"> </a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"> <img src="/images/css.svg" alt="Logo CSS"> </a>
+            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"> <img src="/images/js.svg" alt="Logo JavaScript"> </a>
+            <a href="https://github.com/"> <img src="/images/git.svg" alt="Logo GitHub"> </a>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <h2>
+            Me contacter
+        </h2>
+        <form>
+            <div class="form-group">
+                <!-- Champ de saisie pour le nom -->
+                <label for="nom"> Nom * </label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+            </div>
+            
+            <div class="form-group">
+                <!-- Champ de saisie pour le prénom -->
+                <label for="prenom"> Prénom * </label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+            </div>
+            
+            <div class="form-group">
+                <!-- Champ de saisie pour l'email -->
+                <label for="email"> Email * </label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+            </div>
+            
+            <div class="form-group">
+                <!-- Champ de saisie pour le numéro de téléphone -->
+                <label for="phone"> Téléphone (facultatif) </label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" name="phone" placeholder="Entrez votre numéro de téléphone" />
+            </div>
+            
+            <div class="form-group">
+                <!-- Champ de saisie pour laisser un message -->
+                <label for="message"> Message * </label>
+                <textarea type="text" id="message" name="message" rows="3" cols="30" placeholder="Entrer votre message" required> </textarea>
+            </div>
+            
+            <button type="submit"> Envoyer </button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>
+            &copy; John Doe Officiel
+        </p>
+    </footer>
+
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

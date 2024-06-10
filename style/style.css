@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* ----------Header----------*/
+/* ------------------------ */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header .nav-cercle {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-cercle .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.nav-cercle .green {
+    background-color: #16a34a;;
+}
+
+.nav-cercle .blue {
+    background-color: #2563eb;
+}
+
+/* ------------------------ */
+/* ----------Main----------*/
+/* ------------------------ */
+
+.titre-principal {
+    background-color: #16a34a;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.titre-principal h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.separator {
+    border: none;
+    height: 2px;
+    background: #ffffff;
+    width: 10%;
+    margin: 20px auto;
+}
+
+.profil, .competences, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.profil h2, .competences h2, .contact h2 {
+    display: inline-block;
+    border-bottom: 2px dotted #16a34a;;
+    font-weight: bold;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+}
+
+.profil p {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.profil-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #16a34a;;
+    object-fit: cover;
+}
+
+.competences-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding-top: 60px;
+}
+
+.competences-content img {
+    width: 150px;
+    height: 150px;
+}
+
+.contact form .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 60px;
+}
+
+.contact form .form-group label {
+    margin-bottom: 5px;
+}
+
+.contact form .form-group input,
+.contact form .form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background: #16a34a;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    background: #15803d;
+}
+
+/* ------------------------ */
+/* ----------Footer----------*/
+/* ------------------------ */
+
+footer {
+    background-color: #16a34a;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}
